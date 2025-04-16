@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            margin-top: 15px;
+            justify-content: center;
+            display: flex;
+            font-size: 25px;
+        }
+
+        .container {
+            background-color: gray;
+            height: 25rem;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            gap: 10px;
+            margin: 15px;
+        }
+
+        p {
+            /* border: 2px solid red; */
+            width: auto;
+            height: max-content;
+        }
+
+        .input form{
+            gap: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .input #askForNum {
+            font-size: 40px;
+        }
+        .resultParas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* border: 2px solid red; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Number Guessing Game</nav>
+    <div class="container">
+        <div class="info">
+            <span>Try and guess a random number between 1 and 100.</span>
+            <span>You have 10 attempts to guess the right number.</span>
+        </div>
+        <div class="input">
+            <form action="">
+                <label for="guessField" id="askForNum" >Guess a number</label>
+                <input type="number">
+                <input id="submit" type="button" value="Submit Guess" style="background-color: black; color: white;">
+            </form>
+        </div>
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"> </span></p>
+            <p>Guess Remaining: <span class="lastResult">10</span> </p>
+            <p class="lowOrHi"></p>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
