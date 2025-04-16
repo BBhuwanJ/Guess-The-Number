@@ -1,4 +1,5 @@
 ## Just a fun game
+[Click here to play](https://bbhuwanj-guessthenumber.netlify.app/)
 
 ## Here the the logic of this game
 
