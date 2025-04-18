@@ -3,11 +3,18 @@ html {
 }
 
 body {
+  background-image: url(./assets/bg.jpeg);
   width: 300px;
   max-width: 750px;
   min-width: 480px;
   margin: 0 auto;
   background-color: #212121;
+}
+
+
+#headerID {
+  background-color: rgb(45, 44, 44);
+  padding: 15px 0px;
 }
 
 
@@ -70,6 +77,9 @@ button {
 }
 
 #wrapper {
+  /* filter: blur(); */
+  /* -webkit-filter: blur(18px); */
+  background-color: none;
   box-sizing: border-box;
   text-align: center;
   width: 450px;
@@ -82,7 +92,6 @@ button {
 
 h1 {
   background-color: #161616;
-
   color: #fff;
   text-align: center;
 }
